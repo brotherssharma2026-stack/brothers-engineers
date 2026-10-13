@@ -17,29 +17,34 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://brothersengineers.in"),
 
   title: {
-    default: "Brothers Engineers | Civil Construction & Engineering Services",
+    default: "Brothers Engineers | Industrial Electrical Solutions",
     template: "%s | Brothers Engineers",
   },
 
   description:
-    "Brothers Engineers provides professional civil construction, engineering, infrastructure, renovation, and project management services across India.",
+    "Brothers Engineers specializes in LT Panel Manufacturing, PCC, MCC, APFC Panels, PLC Automation, VFD Panels, Electrical Contracting, Installation, Commissioning and Industrial Maintenance across India.",
 
   keywords: [
     "Brothers Engineers",
-    "Civil Construction",
-    "Engineering Company",
-    "Building Construction",
-    "Infrastructure",
-    "Renovation",
-    "Project Management",
+    "LT Panel Manufacturer",
+    "LT Panel Manufacturing",
+    "PCC Panels",
+    "MCC Panels",
+    "APFC Panels",
+    "PLC Automation",
+    "VFD Panels",
+    "Industrial Electrical Solutions",
+    "Electrical Contracting",
+    "Industrial Maintenance",
+    "Electrical Panel Manufacturer in Noida",
   ],
 
   authors: [{ name: "Brothers Engineers" }],
 
   openGraph: {
-    title: "Brothers Engineers",
+    title: "Brothers Engineers | Industrial Electrical Solutions",
     description:
-      "Professional Civil Construction & Engineering Services.",
+      "LT Panel Manufacturing, PCC, MCC, APFC Panels, PLC Automation, VFD Panels and Complete Industrial Electrical Solutions.",
     url: "https://brothersengineers.in",
     siteName: "Brothers Engineers",
     locale: "en_IN",
@@ -62,10 +67,10 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-  <body className="min-h-full flex flex-col">
-  {children}
-  <GoogleAnalytics gaId="G-P8D68209V1" />
-</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <GoogleAnalytics gaId="G-P8D68209V1" />
+      </body>
     </html>
   );
 }
