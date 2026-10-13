@@ -1,21 +1,13 @@
-openGraph: {
-  title: "Brothers Engineers",
-  description:
-    "Professional Civil Construction & Engineering Services.",
-  url: "https://brothersengineers.in",
-  siteName: "Brothers Engineers",
-  locale: "en_IN",
-  type: "website",
-},
+```ts
+import type { MetadataRoute } from "next";
 
-twitter: {
-  card: "summary_large_image",
-  title: "Brothers Engineers",
-  description:
-    "Professional Civil Construction & Engineering Services.",
-},
-
-robots: {
-  index: true,
-  follow: true,
-},
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: {
+      userAgent: "*",
+      allow: "/",
+    },
+    sitemap: "https://brothersengineers.in/sitemap.xml",
+  };
+}
+```
